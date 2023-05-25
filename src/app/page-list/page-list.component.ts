@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Search } from '../search';
 
 @Component({
   selector: 'app-page-list',
@@ -8,12 +9,6 @@ import { Component, Input } from '@angular/core';
 export class PageListComponent {
 
   @Input()
-  pages:{
-    title:string,
-    wordcount:string,
-    snippet:string,
-    pageid:number
-
-  }[]=[];
+  pages:Search[]=[];
 
 }
